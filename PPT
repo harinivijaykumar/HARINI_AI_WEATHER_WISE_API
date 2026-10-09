@@ -1,0 +1,52 @@
+1. Introduction 
+AI Weather Wise is a web-based weather information application.
+It provides current weather conditions and a 7-day forecast. 
+Users can search by city or use browser-based location access. 
+A smart recommendation module converts weather values into practical advice. 
+The application is designed for simple, fast and user-friendly access.
+2. Problem Statement Users often need quick and understandable weather information.
+Raw weather values may not directly tell users what action to take. Important details such as rainfall, heat, wind and humidity can be difficult to interpret quickly. 
+The project addresses this by combining live weather data with simple smart recommendations.
+3. Objectives Develop a responsive and easy-to-use weather website.
+Retrieve live weather information through an API.
+Display temperature, humidity, rainfall, wind speed and cloud cover. 
+Provide a 7-day forecast. 
+Support city search and current-location weather.
+Generate useful weather advice using rule-based analysis.
+4. Existing vs Proposed System Existing System: 
+• Weather applications may present large amounts of information. 
+• Users may need to interpret several weather values themselves.
+Proposed System: 
+• Simple dashboard with important weather values. 
+• 7-day forecast and location support. 
+• Smart advice based on current weather conditions.
+5. Technologies Used HTML5 page structure and user interface.
+CSS3 responsive layout, cards, buttons and visual design. 
+JavaScript API communication, data processing and dynamic updates. 
+Open-Meteo Geocoding API converts city names into coordinates. 
+Open-Meteo Forecast API provides current and daily forecast data. 
+Browser Geolocation API obtains user location after permission.
+6. System Architecture User ↓ Web Interface ↓ JavaScript Application Logic ↓ Geocoding API → Latitude & Longitude ↓ Weather Forecast API → Weather Data ↓ Recommendation Engine ↓7.
+Main Modules City Search Module finds a location from a city name.
+Weather Data Module retrieves live weather information. 
+Current Weather Module displays temperature and conditions.
+Forecast Module generates the 7-day forecast. 
+Smart Recommendation Module analyzes weather conditions. 
+Location Module supports weather lookup using browser location.
+8. Smart Recommendation Logic Thunderstorm → recommends staying indoors and taking caution.
+Heavy rainfall → suggests carrying an umbrella and allowing extra travel time. 
+Rain → suggests carrying an umbrella. High temperature → recommends hydration and avoiding prolonged sunlight.
+Low temperature → suggests an extra layer. Strong wind → recommends caution in exposed areas. 
+High humidity → recommends hydration.
+9. Working Process 
+1. User enters a city name or selects My Location.
+2. The application obtains geographical coordinates. 
+3. Coordinates are sent to the weather API.
+4. Weather data is returned in JSON format.
+5. JavaScript processes the data.
+6. Current conditions and 7-day forecast are displayed.
+7. Smart recommendation logic generates practical advice.
+10. User Interface Features Weather dashboard with city and date.
+Current temperature and weather icon. 
+Humidity, wind, rainfall and cloud-cover cards.
+AI Weather Advice section. 7-day forecast cards. City search and My Location buttons. Responsive layout for desktop and mobile screens.11. Testing Valid city search → weather information displayed successfully. Invalid city → city-not-found message displayed. Empty search → validation message displayed. Weather details → temperature, humidity, wind, rain and cloud values displayed. Forecast → seven forecast cards generated. Location → weather requested after location permission. Responsive UI → layout adapts to smaller screens.12. Advantages Simple and user-friendly interface. Live weather information. No separate database required for the basic version. Supports city search and location access. Provides a 7-day forecast. Smart recommendations make weather data easier to understand. Can run directly in a modern web browser.13. Limitations Internet connection is required for live weather data. The recommendation engine uses predefined rules. Weather accuracy depends on the external weather service. Location access requires browser permission. The basic version does not store historical weather data. The current version is not a trained machine-learning prediction system.14. Future Enhancements Integrate a trained machine-learning model. Add weather history and graphical charts. Add severe-weather notifications. Add daily weather alerts. Add air-quality and UV-index information. Add multiple language support. Add user accounts and saved locations. Develop Android and iOS versions.15. Conclusion AI Weather Wise demonstrates API integration using modern web technologies. The application provides current conditions and a 7-day forecast. It combines weather data with rule-based smart recommendations. The project is lightweight, responsive and suitable for academic demonstration. The system can be extended with machine learning, notifications and historical data.
